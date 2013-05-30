@@ -1,7 +1,7 @@
 # encoding: utf-8
-require 'rack/relativize/version'
 
 class Rack::Relativize
+  require 'rack/relativize/version' unless const_defined?(:VERSION)
 
   def initialize(app)
     @app        = app

@@ -14,4 +14,8 @@ Gem::Specification.new do |gem|
   gem.name          = "rack-relativize"
   gem.require_paths = ["lib"]
   gem.version       = Rack::Relativize::VERSION
+  gem.add_dependency "rack"
+  gem.add_development_dependency "rack-test"
+  gem.add_development_dependency "rake"
+  gem.add_development_dependency "rspec"
 end
